@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    
+    <script src="blockchain.js"></script>    
+
+    <script>
+    
+      var bla = new Blockchain();
+    
+    </script>
+    <style>
+    
+      body {
+        margin: 18px;
+      }
+    
+    </style>
+  </head>
+
+  <body>
+    
+    <h1>
+      Simple blockchain in JavaScript
+    </h1>
+    
+ 
+    
+    <p>do open the console for maximum enjoyment</p>
+          
+    <p>
+      <input type="text" id="block" class="form-control">
+    </p>
+      
+    <p>
+      <button onclick="bla.addBlock(block.value);" type="button" class="btn btn-primary">
+      add this to the chain
+      </button>
+    </p>
+      
+    <p>
+      <button onclick="bla.checkChain();" type="button" class="btn btn-primary">
+        rattle the chain!
+      </button>
+    </p>
+      
+    <ul>
+      <li>Fill the chain with some items, rattle the chain.</li>
+      <li>Use console (F12) to contaminate chain object: <code>bla.blocks[2][0] = 'Goat'; //third block, first field</code></li>
+      <li>Rattle the chain to see the contamination.</li>
+    </ul>
+    
+    <div id="auspuff"></div>
+    
+  </body>
+  
+</html>
